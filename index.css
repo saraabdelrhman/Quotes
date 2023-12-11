@@ -1,0 +1,61 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+header {
+    position: relative;
+    background-image: url(./depositphotos_117327552-stock-photo-daisy-flowers-on-wooden-background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value for the desired darkness */
+}
+
+.container {
+    color: rgb(255, 255, 255);
+    bottom: 100px;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Place the container above the pseudo-element overlay */
+    margin-bottom: 30px;
+}
+button {
+    background-color: rgb(240, 240, 23);
+ width: 120px;
+ margin-left: 20px;
+ height: 50px;
+    border-radius: 20px;
+    font-weight: 700;
+   
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    -2px -2px 4px rgba(255, 255, 255, 0.2); /* Adjust the values for your desired shadow effect */
+}
+button:hover{
+    background-color: rgb(244, 244, 113);
+    transition: 0.5s;
+}
+.quote {
+  
+    margin-top: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 120px;
+    z-index: 2;
+}
+
